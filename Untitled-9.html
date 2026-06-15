@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شركة الحويطي 111 لنقل العفش والأثاث بالرياض</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary-gold: #b38f43;
+  --soft-gold: #e6d5b8;
+  --dark-bronze: #735926;
+  --bg-soft: #fcfbfa; /* خلفية كريمي ناعمة وهادئة */
+  --bg-card: #ffffff; /* كروت بيضاء نقية */
+  --text-main: #2c2a27; /* نصوص داكنة مريحة للعين بديل الأسود الحاد */
+  --text-muted: #6e6a64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-soft);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+/* هيدر أبيض زجاجي راقي */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  padding: 15px 8%;
+  z-index: 999;
+  border-bottom: 1px solid rgba(179, 143, 67, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-gold);
+  object-fit: cover;
+}
+
+.logo h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary-gold);
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: .3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-gold);
+}
+
+/* قسم رئيسي (Hero) مشرق وأنيق */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 130px 20px 60px 20px;
+  background: radial-gradient(circle at center, #ffffff 0%, var(--bg-soft) 100%);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 750px;
+  z-index: 2;
+}
+
+.hero-main-logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid var(--soft-gold);
+  box-shadow: 0 10px 30px rgba(179, 143, 67, 0.12);
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.hero-motto {
+  color: var(--primary-gold);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+/* الأزرار المتناسقة */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 40px;
+  background: linear-gradient(135deg, var(--primary-gold), var(--dark-bronze));
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 50px;
+  transition: .3s ease;
+  box-shadow: 0 6px 20px rgba(179, 143, 67, 0.25);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(179, 143, 67, 0.4);
+}
+
+/* شريط عرض هادئ وجذاب */
+.offer {
+  background: #f4efe6;
+  color: var(--dark-bronze);
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 1px solid rgba(179, 143, 67, 0.1);
+  border-bottom: 1px solid rgba(179, 143, 67, 0.1);
+}
+
+section {
+  padding: 80px 8% 50px 8%;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: var(--text-main);
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: var(--primary-gold);
+  border-radius: 2px;
+}
+
+/* كروت الخدمات الهادئة */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--bg-card);
+  padding: 35px 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+  transition: .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--soft-gold);
+  box-shadow: 0 12px 25px rgba(179, 143, 67, 0.08);
+}
+
+.card h3 {
+  color: var(--primary-gold);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* معرض الصور بعد المعالجة */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+  aspect-ratio: 4/5;
+  background: #eaeaea;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0; left: 0; width: 100%;
+  padding: 20px 10px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  text-align: center;
+}
+
+.gallery-overlay p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* الإحصائيات الفاتحة */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.counter {
+  font-size: 44px;
+  color: var(--primary-gold);
+  font-weight: 800;
+}
+
+.stat p {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* التقييمات */
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 12px;
+  border-right: 4px solid var(--primary-gold);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.review h4 {
+  color: #ffb300;
+  margin-bottom: 10px;
+}
+
+.review p {
+  color: var(--text-main);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* قسم العنوان والاتصال */
+.contact-info {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+}
+
+.address-box {
+  background: #f4efe6;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-bronze);
+  margin-bottom: 25px;
+  border: 1px dashed var(--primary-gold);
+}
+
+iframe {
+  width: 100%;
+  height: 380px;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 12px;
+}
+
+footer {
+  background: #2c2a27;
+  text-align: center;
+  padding: 25px;
+  color: #eae7e2;
+  font-size: 14px;
+}
+
+/* أزرار التواصل العائمة الذكية والثابتة */
+.phone-float-btn {
+  position: fixed;
+  bottom: 100px;
+  left: 25px;
+  background: linear-gradient(135deg, var(--primary-gold), var(--dark-bronze));
+  color: white;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(179, 143, 67, 0.3);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: .3s ease;
+}
+
+.whatsapp-float-btn {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease;
+}
+
+.whatsapp-float-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.phone-float-btn:hover, .whatsapp-float-btn:hover {
+  transform: scale(1.06) translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  nav ul { display: none; }
+  .hero-content h1 { font-size: 28px; }
+  section { padding: 60px 5% 30px 5%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="WhatsApp Image 2026-06-13 at 10.29.07 PM.jpeg" alt="شعار الحويطي">
+      <h2>الحويطي 111</h2>
+    </div>
+    <ul>
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#gallery">أعمالنا</a></li>
+      <li><a href="#contact">اتصل بنا</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <img src="WhatsApp Image 2026-06-13 at 10.29.07 PM.jpeg" alt="شعار الشركة" class="hero-main-logo">
+    <h1>شركة الحويطي 111 لنقل العفش</h1>
+    <div class="hero-motto">نقل أثاثك .. بعناية تستحق الثقة</div>
+    <p>نحن متخصصون في خدمات فك، تركيب، تغليف، وشحن الأثاث المنزلي والمكتبي بالرياض وبأعلى درجات الحرفية والالتزام.</p>
+    <a href="tel:0549628625" class="btn">📞 اتصل بنا لطلب الخدمة فوراً</a>
+  </div>
+</section>
+
+<div class="offer">
+  🎁 خصم خاص وحصري 15% لجميع العملاء داخل الرياض هذا الأسبوع فقط!
+</div>
+
+<section id="services">
+  <h2 class="title">خدماتنا المتميزة</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>نقل الأثاث والعفش</h3>
+      <p>بواسطة ديانات وسيارات نقل مغلقة ومجهة لحماية المنقولات بالكامل.</p>
+    </div>
+    <div class="card">
+      <h3>التغليف الاحترافي</h3>
+      <p>استخدام الكرتون السميك، البلاستيك الفقاعي، ورول النايلون لحماية ضد الخدش.</p>
+    </div>
+    <div class="card">
+      <h3>الفك والتركيب</h3>
+      <p>فنيين ونجارين متخصصين لفك وتركيب المطابخ والستائر وغرف النوم بدقة.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="title">معرض أعمالنا في التغليف</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="d4e97bc0-c776-4d2d-b4e0-a9661421bed1.jpg" alt="تغليف صالونات">
+      <div class="gallery-overlay"><p>تغليف المجالس والصالونات</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="b6db7d7d-24b5-4e5a-8b31-2f7fd48f16ee.jpg" alt="كراتين عفش">
+      <div class="gallery-overlay"><p>تعبئة كراتين وحفظ الأغراض</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="99be34f9-9aed-4cf4-9cd9-44bec47fe4c1.jpg" alt="تغليف طاولة">
+      <div class="gallery-overlay"><p>حماية طاولات الطعام الفاخرة</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="8127c858-bad8-4914-ac06-267974ea04f6 (1).jpg" alt="تغليف متكامل">
+      <div class="gallery-overlay"><p>تغليف غرف المعيشة والشاشات</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="8127c858-bad8-4914-ac06-267974ea04f6.jpg" alt="أثاث مغلف بالكامل">
+      <div class="gallery-overlay"><p>تجهيز الأثاث للشحن بأمان</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="01f2116c-c35e-453b-a820-ca51d8ee1ea2.jpg" alt="تغليف أطقم كنب">
+      <div class="gallery-overlay"><p>تغليف أطقم الكنب والمجالس</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="a4f90db5-acf1-47a2-a15a-9ce8b69381be.jpg" alt="كراسي مغلفة">
+      <div class="gallery-overlay"><p>حماية الكراسي والقطع الخشبية</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="e54b722f-96c1-4bc5-8aaa-94c41b1d08af.jpg" alt="تغليف ديوانية">
+      <div class="gallery-overlay"><p>تغليف شامل للمجالس الكبيرة</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="04c4e6e2-23dc-4c4d-b443-934451b06f8e.jpg" alt="ترتيب العفش">
+      <div class="gallery-overlay"><p>ترتيب وتنظيم العفش داخل المنزل</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="stats" style="background: #fdfcfb;">
+  <div class="stats">
+    <div class="stat"><div class="counter" data-target="450">0</div><p>عملية نقل ناجحة</p></div>
+    <div class="stat"><div class="counter" data-target="380">0</div><p>عميل راضٍ تماماً</p></div>
+    <div class="stat"><div class="counter" data-target="7">0</div><p>سنوات خبرة في الرياض</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">تواصل معنا وموقعنا</h2>
+  <div class="contact-info">
+    <div class="address-box">
+      📍 المقر: 6470 العطايف، طويق، الرياض 14914، المملكة العربية السعودية
+    </div>
+    <a href="tel:0549628625" class="btn">📱 اضغط للاتصال المباشر: 0549628625</a>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115995.14372957973!2d46.541624897265625!3d24.52479260000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f1b3469dbfcc5%3A0x6b44a6f7b19dfb7d!2z2KfZhNix2YrYp9i2!5e0!3m2!1sar!2ssa!4v1718310000000!5m2!1sar!2ssa" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<footer>
+  © 2026 شركة الحويطي 111 لنقل العفش والأثاث بالرياض. جميع الحقوق محفوظة.
+</footer>
+
+<a href="tel:0549628625" class="phone-float-btn">📞 اتصل الآن</a>
+
+<a class="whatsapp-float-btn" href="https://wa.me/966549628625" target="_blank" title="تواصل معنا عبر واتساب">
+  <img src="WhatsApp Image 2026-06-15 at 8.01.13 PM.jpeg" alt="واتساب">
+</a>
+
+<script>
+// عداد الأرقام التلقائي
+const counters = document.querySelectorAll('.counter');
+const speed = 80;
+const startCounters = () => {
+  counters.forEach(counter => {
+    const target = +counter.dataset.target;
+    let count = 0;
+    const update = () => {
+      const increment = Math.ceil(target / speed);
+      count += increment;
+      if (count < target) {
+        counter.innerText = count;
+        setTimeout(update, 25);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    update();
+  });
+};
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      startCounters();
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.5});
+observer.observe(document.getElementById('stats'));
+</script>
+
+</body>
+</html>
